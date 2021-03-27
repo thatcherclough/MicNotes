@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17701" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch40"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17500"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+    </dependencies>
+    <scenes>
+        <!--MicNotes-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller title="MicNotes" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="MicNotes_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="0.59999999999999998" alignment="center" verticalAlignment="center" layout="vertical" id="SUd-Cm-lAg">
+                            <items>
+                                <button alignment="center" verticalAlignment="center" id="1Ou-Pn-ygd">
+                                    <group key="contentGroup" width="1" height="1" alignment="left" layout="vertical" id="E6U-TK-NOj">
+                                        <items>
+                                            <imageView width="1" height="0.40000000000000002" alignment="center" verticalAlignment="center" image="mic.fill" catalog="system" contentMode="scaleAspectFit" id="LDM-Dk-V2B">
+                                                <color key="tintColor" name="AccentColor"/>
+                                            </imageView>
+                                            <label alignment="center" verticalAlignment="center" text="New note" id="9cX-pd-DGN"/>
+                                        </items>
+                                        <color key="backgroundColor" white="0.10000000000000001" alpha="1" colorSpace="calibratedWhite"/>
+                                    </group>
+                                </button>
+                            </items>
+                            <gestureRecognizers>
+                                <longPressGestureRecognizer delaysTouchesEnded="NO" id="Q7i-cA-g7f">
+                                    <connections>
+                                        <action selector="newNoteButtonLongPressAction:" destination="AgC-eL-Hgc" id="VOw-Je-y6k"/>
+                                    </connections>
+                                </longPressGestureRecognizer>
+                                <tapGestureRecognizer delaysTouchesEnded="NO" id="Dzm-R1-xSQ">
+                                    <connections>
+                                        <action selector="newNoteButtonPressAction:" destination="AgC-eL-Hgc" id="HW6-0t-Hu6"/>
+                                    </connections>
+                                </tapGestureRecognizer>
+                            </gestureRecognizers>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="MicNotes_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="MicNotes_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="345"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" name="AccentColor"/>
+    <resources>
+        <image name="mic.fill" catalog="system" width="111" height="128"/>
+        <namedColor name="AccentColor">
+            <color red="0.90200001001358032" green="0.67799997329711914" blue="0.090000003576278687" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

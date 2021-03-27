@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "IMG_3830_apple-applewatch44mm-darktitanium-cyprusgreensololoop-portrait.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

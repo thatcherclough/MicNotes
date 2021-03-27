@@ -1,0 +1,859 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD09F7FF25A7D36900EAB43E /* DownloadShortcutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD09F7FE25A7D36900EAB43E /* DownloadShortcutsViewController.swift */; };
+		DD09F80525A8D7D500EAB43E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD09F80425A8D7D500EAB43E /* MainViewController.swift */; };
+		DD09F81E25A9674300EAB43E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD09F81025A8EF4500EAB43E /* SettingsViewController.swift */; };
+		DD653C7925A28EF8007DCEC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD653C7825A28EF8007DCEC3 /* AppDelegate.swift */; };
+		DD653C7B25A28EF8007DCEC3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD653C7A25A28EF8007DCEC3 /* SceneDelegate.swift */; };
+		DD653C8025A28EF8007DCEC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD653C7E25A28EF8007DCEC3 /* Main.storyboard */; };
+		DD653C8225A28EFE007DCEC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD653C8125A28EFE007DCEC3 /* Assets.xcassets */; };
+		DD653C8525A28EFE007DCEC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD653C8325A28EFE007DCEC3 /* LaunchScreen.storyboard */; };
+		DD653C8A25A28EFE007DCEC3 /* MicNotes WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DD653C8925A28EFE007DCEC3 /* MicNotes WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DD653C9025A28EFE007DCEC3 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD653C8E25A28EFE007DCEC3 /* Interface.storyboard */; };
+		DD653C9225A28F01007DCEC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD653C9125A28F01007DCEC3 /* Assets.xcassets */; };
+		DD653C9925A28F01007DCEC3 /* MicNotes WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DD653C9825A28F01007DCEC3 /* MicNotes WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DD653C9E25A28F01007DCEC3 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD653C9D25A28F01007DCEC3 /* InterfaceController.swift */; };
+		DD653CA025A28F01007DCEC3 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD653C9F25A28F01007DCEC3 /* ExtensionDelegate.swift */; };
+		DD653CA425A28F01007DCEC3 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD653CA325A28F01007DCEC3 /* ComplicationController.swift */; };
+		DD653CA625A28F04007DCEC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD653CA525A28F04007DCEC3 /* Assets.xcassets */; };
+		DD653CC625A29010007DCEC3 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD653CC525A29010007DCEC3 /* Intents.framework */; };
+		DD653CC925A29010007DCEC3 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD653CC825A29010007DCEC3 /* IntentHandler.swift */; };
+		DD653CCD25A29010007DCEC3 /* MicNotes Shortcuts.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DD653CC325A29010007DCEC3 /* MicNotes Shortcuts.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DD653CD725A29028007DCEC3 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DD653CD625A29028007DCEC3 /* Intents.intentdefinition */; };
+		DD653CDC25A29038007DCEC3 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DD653CD625A29028007DCEC3 /* Intents.intentdefinition */; };
+		DD653CE625A290DE007DCEC3 /* GetNotesHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD653CE525A290DE007DCEC3 /* GetNotesHandler.swift */; };
+		DDC0BC9925A762C10042FC8B /* SetupNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC0BC9825A762C10042FC8B /* SetupNavigationController.swift */; };
+		DDE23596260FD7D500B26198 /* AddMicNotesShortcutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE23595260FD7D500B26198 /* AddMicNotesShortcutViewController.swift */; };
+		DDE235A2260FDA4D00B26198 /* TestShortcutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE235A1260FDA4D00B26198 /* TestShortcutViewController.swift */; };
+		DDE235A8260FE0F400B26198 /* FinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE235A7260FE0F400B26198 /* FinishViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD653C8B25A28EFE007DCEC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD653C6D25A28EF8007DCEC3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD653C8825A28EFE007DCEC3;
+			remoteInfo = "MicNotes WatchKit App";
+		};
+		DD653C9A25A28F01007DCEC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD653C6D25A28EF8007DCEC3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD653C9725A28F01007DCEC3;
+			remoteInfo = "MicNotes WatchKit Extension";
+		};
+		DD653CCB25A29010007DCEC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD653C6D25A28EF8007DCEC3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD653CC225A29010007DCEC3;
+			remoteInfo = "MicNotes Shortcuts";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DD653CAE25A28F04007DCEC3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DD653C9925A28F01007DCEC3 /* MicNotes WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD653CB225A28F04007DCEC3 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				DD653C8A25A28EFE007DCEC3 /* MicNotes WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD653CD125A29010007DCEC3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DD653CCD25A29010007DCEC3 /* MicNotes Shortcuts.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DD09F7FE25A7D36900EAB43E /* DownloadShortcutsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadShortcutsViewController.swift; sourceTree = "<group>"; };
+		DD09F80425A8D7D500EAB43E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		DD09F81025A8EF4500EAB43E /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		DD653C7525A28EF8007DCEC3 /* MicNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MicNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD653C7825A28EF8007DCEC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DD653C7A25A28EF8007DCEC3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DD653C7F25A28EF8007DCEC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DD653C8125A28EFE007DCEC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD653C8425A28EFE007DCEC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DD653C8625A28EFE007DCEC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD653C8925A28EFE007DCEC3 /* MicNotes WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MicNotes WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD653C8F25A28EFE007DCEC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		DD653C9125A28F01007DCEC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD653C9325A28F01007DCEC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD653C9825A28F01007DCEC3 /* MicNotes WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MicNotes WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD653C9D25A28F01007DCEC3 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		DD653C9F25A28F01007DCEC3 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		DD653CA325A28F01007DCEC3 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		DD653CA525A28F04007DCEC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD653CA725A28F04007DCEC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD653CA825A28F04007DCEC3 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		DD653CC325A29010007DCEC3 /* MicNotes Shortcuts.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MicNotes Shortcuts.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD653CC525A29010007DCEC3 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		DD653CC825A29010007DCEC3 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		DD653CCA25A29010007DCEC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD653CD625A29028007DCEC3 /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		DD653CE525A290DE007DCEC3 /* GetNotesHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetNotesHandler.swift; sourceTree = "<group>"; };
+		DD653CF325A2B3C5007DCEC3 /* MicNotes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MicNotes.entitlements; sourceTree = "<group>"; };
+		DD653CF825A2B3F5007DCEC3 /* MicNotes Shortcuts.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "MicNotes Shortcuts.entitlements"; sourceTree = "<group>"; };
+		DDBFB0E525A3C50000E05F1E /* MicNotes WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "MicNotes WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		DDC0BC9825A762C10042FC8B /* SetupNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupNavigationController.swift; sourceTree = "<group>"; };
+		DDE23595260FD7D500B26198 /* AddMicNotesShortcutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMicNotesShortcutViewController.swift; sourceTree = "<group>"; };
+		DDE235A1260FDA4D00B26198 /* TestShortcutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestShortcutViewController.swift; sourceTree = "<group>"; };
+		DDE235A7260FE0F400B26198 /* FinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD653C7225A28EF8007DCEC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD653C9525A28F01007DCEC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD653CC025A29010007DCEC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD653CC625A29010007DCEC3 /* Intents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD09F80A25A8D96A00EAB43E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DD653C7E25A28EF8007DCEC3 /* Main.storyboard */,
+				DD653C8325A28EFE007DCEC3 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		DD09F80B25A8D98000EAB43E /* SetupViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DD09F7FE25A7D36900EAB43E /* DownloadShortcutsViewController.swift */,
+				DDE23595260FD7D500B26198 /* AddMicNotesShortcutViewController.swift */,
+				DDE235A1260FDA4D00B26198 /* TestShortcutViewController.swift */,
+				DDE235A7260FE0F400B26198 /* FinishViewController.swift */,
+			);
+			path = SetupViewControllers;
+			sourceTree = "<group>";
+		};
+		DD653C6C25A28EF8007DCEC3 = {
+			isa = PBXGroup;
+			children = (
+				DD653C7725A28EF8007DCEC3 /* MicNotes */,
+				DD653C8D25A28EFE007DCEC3 /* MicNotes WatchKit App */,
+				DD653C9C25A28F01007DCEC3 /* MicNotes WatchKit Extension */,
+				DD653CC725A29010007DCEC3 /* MicNotes Shortcuts */,
+				DD653CC425A29010007DCEC3 /* Frameworks */,
+				DD653C7625A28EF8007DCEC3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD653C7625A28EF8007DCEC3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD653C7525A28EF8007DCEC3 /* MicNotes.app */,
+				DD653C8925A28EFE007DCEC3 /* MicNotes WatchKit App.app */,
+				DD653C9825A28F01007DCEC3 /* MicNotes WatchKit Extension.appex */,
+				DD653CC325A29010007DCEC3 /* MicNotes Shortcuts.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD653C7725A28EF8007DCEC3 /* MicNotes */ = {
+			isa = PBXGroup;
+			children = (
+				DD653CF325A2B3C5007DCEC3 /* MicNotes.entitlements */,
+				DD09F80A25A8D96A00EAB43E /* Storyboards */,
+				DD09F80B25A8D98000EAB43E /* SetupViewControllers */,
+				DD653C7825A28EF8007DCEC3 /* AppDelegate.swift */,
+				DD09F81025A8EF4500EAB43E /* SettingsViewController.swift */,
+				DD653C7A25A28EF8007DCEC3 /* SceneDelegate.swift */,
+				DDC0BC9825A762C10042FC8B /* SetupNavigationController.swift */,
+				DD09F80425A8D7D500EAB43E /* MainViewController.swift */,
+				DD653C8125A28EFE007DCEC3 /* Assets.xcassets */,
+				DD653C8625A28EFE007DCEC3 /* Info.plist */,
+			);
+			path = MicNotes;
+			sourceTree = "<group>";
+		};
+		DD653C8D25A28EFE007DCEC3 /* MicNotes WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				DD653C8E25A28EFE007DCEC3 /* Interface.storyboard */,
+				DD653C9125A28F01007DCEC3 /* Assets.xcassets */,
+				DD653C9325A28F01007DCEC3 /* Info.plist */,
+			);
+			path = "MicNotes WatchKit App";
+			sourceTree = "<group>";
+		};
+		DD653C9C25A28F01007DCEC3 /* MicNotes WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DDBFB0E525A3C50000E05F1E /* MicNotes WatchKit Extension.entitlements */,
+				DD653C9D25A28F01007DCEC3 /* InterfaceController.swift */,
+				DD653C9F25A28F01007DCEC3 /* ExtensionDelegate.swift */,
+				DD653CA325A28F01007DCEC3 /* ComplicationController.swift */,
+				DD653CA525A28F04007DCEC3 /* Assets.xcassets */,
+				DD653CA725A28F04007DCEC3 /* Info.plist */,
+				DD653CA825A28F04007DCEC3 /* PushNotificationPayload.apns */,
+			);
+			path = "MicNotes WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		DD653CC425A29010007DCEC3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD653CC525A29010007DCEC3 /* Intents.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD653CC725A29010007DCEC3 /* MicNotes Shortcuts */ = {
+			isa = PBXGroup;
+			children = (
+				DD653CF825A2B3F5007DCEC3 /* MicNotes Shortcuts.entitlements */,
+				DD653CC825A29010007DCEC3 /* IntentHandler.swift */,
+				DD653CE525A290DE007DCEC3 /* GetNotesHandler.swift */,
+				DD653CD625A29028007DCEC3 /* Intents.intentdefinition */,
+				DD653CCA25A29010007DCEC3 /* Info.plist */,
+			);
+			path = "MicNotes Shortcuts";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD653C7425A28EF8007DCEC3 /* MicNotes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD653CB325A28F04007DCEC3 /* Build configuration list for PBXNativeTarget "MicNotes" */;
+			buildPhases = (
+				DD653C7125A28EF8007DCEC3 /* Sources */,
+				DD653C7225A28EF8007DCEC3 /* Frameworks */,
+				DD653C7325A28EF8007DCEC3 /* Resources */,
+				DD653CB225A28F04007DCEC3 /* Embed Watch Content */,
+				DD653CD125A29010007DCEC3 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD653C8C25A28EFE007DCEC3 /* PBXTargetDependency */,
+				DD653CCC25A29010007DCEC3 /* PBXTargetDependency */,
+			);
+			name = MicNotes;
+			productName = MicNotes;
+			productReference = DD653C7525A28EF8007DCEC3 /* MicNotes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD653C8825A28EFE007DCEC3 /* MicNotes WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD653CAF25A28F04007DCEC3 /* Build configuration list for PBXNativeTarget "MicNotes WatchKit App" */;
+			buildPhases = (
+				DD653C8725A28EFE007DCEC3 /* Resources */,
+				DD653CAE25A28F04007DCEC3 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD653C9B25A28F01007DCEC3 /* PBXTargetDependency */,
+			);
+			name = "MicNotes WatchKit App";
+			productName = "MicNotes WatchKit App";
+			productReference = DD653C8925A28EFE007DCEC3 /* MicNotes WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		DD653C9725A28F01007DCEC3 /* MicNotes WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD653CAB25A28F04007DCEC3 /* Build configuration list for PBXNativeTarget "MicNotes WatchKit Extension" */;
+			buildPhases = (
+				DD653C9425A28F01007DCEC3 /* Sources */,
+				DD653C9525A28F01007DCEC3 /* Frameworks */,
+				DD653C9625A28F01007DCEC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MicNotes WatchKit Extension";
+			productName = "MicNotes WatchKit Extension";
+			productReference = DD653C9825A28F01007DCEC3 /* MicNotes WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		DD653CC225A29010007DCEC3 /* MicNotes Shortcuts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD653CCE25A29010007DCEC3 /* Build configuration list for PBXNativeTarget "MicNotes Shortcuts" */;
+			buildPhases = (
+				DD653CBF25A29010007DCEC3 /* Sources */,
+				DD653CC025A29010007DCEC3 /* Frameworks */,
+				DD653CC125A29010007DCEC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MicNotes Shortcuts";
+			productName = "MicNotes Shortcuts";
+			productReference = DD653CC325A29010007DCEC3 /* MicNotes Shortcuts.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD653C6D25A28EF8007DCEC3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					DD653C7425A28EF8007DCEC3 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					DD653C8825A28EFE007DCEC3 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					DD653C9725A28F01007DCEC3 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					DD653CC225A29010007DCEC3 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = DD653C7025A28EF8007DCEC3 /* Build configuration list for PBXProject "MicNotes" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD653C6C25A28EF8007DCEC3;
+			productRefGroup = DD653C7625A28EF8007DCEC3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD653C7425A28EF8007DCEC3 /* MicNotes */,
+				DD653C8825A28EFE007DCEC3 /* MicNotes WatchKit App */,
+				DD653C9725A28F01007DCEC3 /* MicNotes WatchKit Extension */,
+				DD653CC225A29010007DCEC3 /* MicNotes Shortcuts */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD653C7325A28EF8007DCEC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD653C8525A28EFE007DCEC3 /* LaunchScreen.storyboard in Resources */,
+				DD653C8225A28EFE007DCEC3 /* Assets.xcassets in Resources */,
+				DD653C8025A28EF8007DCEC3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD653C8725A28EFE007DCEC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD653C9225A28F01007DCEC3 /* Assets.xcassets in Resources */,
+				DD653C9025A28EFE007DCEC3 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD653C9625A28F01007DCEC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD653CA625A28F04007DCEC3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD653CC125A29010007DCEC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD653C7125A28EF8007DCEC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDE23596260FD7D500B26198 /* AddMicNotesShortcutViewController.swift in Sources */,
+				DD09F80525A8D7D500EAB43E /* MainViewController.swift in Sources */,
+				DD09F7FF25A7D36900EAB43E /* DownloadShortcutsViewController.swift in Sources */,
+				DDE235A2260FDA4D00B26198 /* TestShortcutViewController.swift in Sources */,
+				DD653C7925A28EF8007DCEC3 /* AppDelegate.swift in Sources */,
+				DDC0BC9925A762C10042FC8B /* SetupNavigationController.swift in Sources */,
+				DD653CDC25A29038007DCEC3 /* Intents.intentdefinition in Sources */,
+				DD653C7B25A28EF8007DCEC3 /* SceneDelegate.swift in Sources */,
+				DD09F81E25A9674300EAB43E /* SettingsViewController.swift in Sources */,
+				DDE235A8260FE0F400B26198 /* FinishViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD653C9425A28F01007DCEC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD653CA425A28F01007DCEC3 /* ComplicationController.swift in Sources */,
+				DD653CA025A28F01007DCEC3 /* ExtensionDelegate.swift in Sources */,
+				DD653C9E25A28F01007DCEC3 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD653CBF25A29010007DCEC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD653CD725A29028007DCEC3 /* Intents.intentdefinition in Sources */,
+				DD653CC925A29010007DCEC3 /* IntentHandler.swift in Sources */,
+				DD653CE625A290DE007DCEC3 /* GetNotesHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD653C8C25A28EFE007DCEC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD653C8825A28EFE007DCEC3 /* MicNotes WatchKit App */;
+			targetProxy = DD653C8B25A28EFE007DCEC3 /* PBXContainerItemProxy */;
+		};
+		DD653C9B25A28F01007DCEC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD653C9725A28F01007DCEC3 /* MicNotes WatchKit Extension */;
+			targetProxy = DD653C9A25A28F01007DCEC3 /* PBXContainerItemProxy */;
+		};
+		DD653CCC25A29010007DCEC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD653CC225A29010007DCEC3 /* MicNotes Shortcuts */;
+			targetProxy = DD653CCB25A29010007DCEC3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DD653C7E25A28EF8007DCEC3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD653C7F25A28EF8007DCEC3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DD653C8325A28EFE007DCEC3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD653C8425A28EFE007DCEC3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DD653C8E25A28EFE007DCEC3 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD653C8F25A28EFE007DCEC3 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD653CA925A28F04007DCEC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DD653CAA25A28F04007DCEC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		DD653CAC25A28F04007DCEC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "MicNotes WatchKit Extension/MicNotes WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YA924NN5VN;
+				INFOPLIST_FILE = "MicNotes WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.thatcherclough.MicNotes.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		DD653CAD25A28F04007DCEC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "MicNotes WatchKit Extension/MicNotes WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YA924NN5VN;
+				INFOPLIST_FILE = "MicNotes WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.thatcherclough.MicNotes.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		DD653CB025A28F04007DCEC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YA924NN5VN;
+				IBSC_MODULE = MicNotes_WatchKit_Extension;
+				INFOPLIST_FILE = "MicNotes WatchKit App/Info.plist";
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.thatcherclough.MicNotes.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		DD653CB125A28F04007DCEC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YA924NN5VN;
+				IBSC_MODULE = MicNotes_WatchKit_Extension;
+				INFOPLIST_FILE = "MicNotes WatchKit App/Info.plist";
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.thatcherclough.MicNotes.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		DD653CB425A28F04007DCEC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MicNotes/MicNotes.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YA924NN5VN;
+				INFOPLIST_FILE = MicNotes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.thatcherclough.MicNotes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DD653CB525A28F04007DCEC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MicNotes/MicNotes.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YA924NN5VN;
+				INFOPLIST_FILE = MicNotes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.thatcherclough.MicNotes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD653CCF25A29010007DCEC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "MicNotes Shortcuts/MicNotes Shortcuts.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YA924NN5VN;
+				INFOPLIST_FILE = "MicNotes Shortcuts/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.thatcherclough.MicNotes.MicNotes-Shortcuts";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DD653CD025A29010007DCEC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "MicNotes Shortcuts/MicNotes Shortcuts.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YA924NN5VN;
+				INFOPLIST_FILE = "MicNotes Shortcuts/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.thatcherclough.MicNotes.MicNotes-Shortcuts";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD653C7025A28EF8007DCEC3 /* Build configuration list for PBXProject "MicNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD653CA925A28F04007DCEC3 /* Debug */,
+				DD653CAA25A28F04007DCEC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD653CAB25A28F04007DCEC3 /* Build configuration list for PBXNativeTarget "MicNotes WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD653CAC25A28F04007DCEC3 /* Debug */,
+				DD653CAD25A28F04007DCEC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD653CAF25A28F04007DCEC3 /* Build configuration list for PBXNativeTarget "MicNotes WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD653CB025A28F04007DCEC3 /* Debug */,
+				DD653CB125A28F04007DCEC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD653CB325A28F04007DCEC3 /* Build configuration list for PBXNativeTarget "MicNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD653CB425A28F04007DCEC3 /* Debug */,
+				DD653CB525A28F04007DCEC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD653CCE25A29010007DCEC3 /* Build configuration list for PBXNativeTarget "MicNotes Shortcuts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD653CCF25A29010007DCEC3 /* Debug */,
+				DD653CD025A29010007DCEC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD653C6D25A28EF8007DCEC3 /* Project object */;
+}
